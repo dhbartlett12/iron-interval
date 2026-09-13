@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="IRON INTERVAL"
+            android:textColor="@color/gold"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12" />
+
+        <!-- SETS -->
+        <LinearLayout
+            android:id="@+id/rowSets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content"
+                android:text="SETS" android:textColor="@color/gold" android:textSize="18sp"/>
+            <Button android:id="@+id/setsMinus" android:layout_width="72dp" android:layout_height="56dp"
+                android:background="@drawable/btn_panel" android:text="−" android:textColor="@color/text" android:textSize="22sp"/>
+            <TextView android:id="@+id/setsVal" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:gravity="center" android:text="4"
+                android:textColor="@color/text" android:textSize="26sp"/>
+            <Button android:id="@+id/setsPlus" android:layout_width="72dp" android:layout_height="56dp"
+                android:background="@drawable/btn_panel" android:text="+" android:textColor="@color/text" android:textSize="22sp"/>
+        </LinearLayout>
+
+        <!-- REST -->
+        <LinearLayout
+            android:id="@+id/rowRest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content"
+                android:text="REST" android:textColor="@color/gold" android:textSize="18sp"/>
+            <Button android:id="@+id/restMinus" android:layout_width="72dp" android:layout_height="56dp"
+                android:background="@drawable/btn_panel" android:text="−" android:textColor="@color/text" android:textSize="22sp"/>
+            <TextView android:id="@+id/restVal" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:gravity="center" android:text="1:30"
+                android:textColor="@color/text" android:textSize="26sp"/>
+            <Button android:id="@+id/restPlus" android:layout_width="72dp" android:layout_height="56dp"
+                android:background="@drawable/btn_panel" android:text="+" android:textColor="@color/text" android:textSize="22sp"/>
+        </LinearLayout>
+
+        <!-- CHANGE -->
+        <LinearLayout
+            android:id="@+id/rowChange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView android:layout_width="110dp" android:layout_height="wrap_content"
+                android:text="CHANGE" android:textColor="@color/gold" android:textSize="18sp"/>
+            <Button android:id="@+id/changeMinus" android:layout_width="72dp" android:layout_height="56dp"
+                android:background="@drawable/btn_panel" android:text="−" android:textColor="@color/text" android:textSize="22sp"/>
+            <TextView android:id="@+id/changeVal" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:gravity="center" android:text="2:00"
+                android:textColor="@color/text" android:textSize="26sp"/>
+            <Button android:id="@+id/changePlus" android:layout_width="72dp" android:layout_height="56dp"
+                android:background="@drawable/btn_panel" android:text="+" android:textColor="@color/text" android:textSize="22sp"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/phase"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="28dp" android:gravity="center"
+            android:text="READY" android:textColor="@color/gold" android:textSize="20sp"/>
+
+        <TextView android:id="@+id/setLine"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:gravity="center"
+            android:text="4 sets  ·  1:30 rest  ·  2:00 change"
+            android:textColor="@color/dim" android:textSize="16sp"/>
+
+        <TextView android:id="@+id/clock"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:gravity="center"
+            android:fontFamily="monospace"
+            android:text="0:05" android:textColor="@color/text" android:textSize="84sp"/>
+
+        <TextView android:id="@+id/status"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:gravity="center"
+            android:text="Play. The clock runs itself."
+            android:textColor="@color/dim" android:textSize="15sp"/>
+
+        <Button android:id="@+id/play"
+            android:layout_width="match_parent" android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_go"
+            android:text="PLAY"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"/>
+
+        <Button android:id="@+id/test"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/btn_panel"
+            android:text="TEST SOUND"
+            android:textColor="@color/text"/>
+    </LinearLayout>
+</ScrollView>

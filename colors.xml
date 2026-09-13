@@ -1,0 +1,9 @@
+<resources>
+    <color name="bg">#121212</color>
+    <color name="panel">#1C1C1C</color>
+    <color name="gold">#C4A35A</color>
+    <color name="text">#ECECEC</color>
+    <color name="dim">#8A8A8A</color>
+    <color name="go">#2E7D4F</color>
+    <color name="stop">#8B2E2E</color>
+</resources>
